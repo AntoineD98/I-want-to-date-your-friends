@@ -1,9 +1,9 @@
 from typing import Any, Dict, Optional
 
-from data.sql_interface.user_updates import UserUpdates
+from data.repository.user_updates import UserUpdatesRepository
 
 
-user_updates = UserUpdates()
+user_updates = UserUpdatesRepository()
 
 
 def create_user(

@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional
 
-from data.sql_interface.user_interactions import UserInteractions
+from data.repository.user_interactions import UserInteractions
 
 
 user_interactions = UserInteractions()

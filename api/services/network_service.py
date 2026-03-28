@@ -1,13 +1,17 @@
 from typing import Dict, Optional, Set
 
-from data.sql_interface.network import Network
-from data.sql_interface.user_interactions import UserInteractions
+from data.repository.connection_repository import Network
+from data.repository.user_interactions import UserInteractions
 from data.sql_model.interaction import ActionType
 from data.sql_model.user import User
 
 
 network = Network()
 user_interactions = UserInteractions()
+
+class NetworkService:
+    def __init__(self):
+        self.cache
 
 
 def get_feed(user_id: str,
